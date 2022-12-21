@@ -1,4 +1,5 @@
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
+    //Return a promise
     return new Promise((resolve, reject) => {
         const x = 2 * 2
 
