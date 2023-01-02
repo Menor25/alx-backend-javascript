@@ -1,4 +1,4 @@
-const getListStudents = () => {
+export default function getListStudents(){
     /* Returns an array of objects */
     const obj = [
         {
@@ -20,4 +20,4 @@ const getListStudents = () => {
 
     return obj;
 }
-export default getListStudents;
+
