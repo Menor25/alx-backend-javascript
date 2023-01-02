@@ -1,6 +1,6 @@
 const getListStudents = () => {
     /* Returns an array of objects */
-    obj = [
+    const obj = [
         {
             id: 1,
             firstName: 'Guillaume',
