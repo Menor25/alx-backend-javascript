@@ -6,11 +6,13 @@ const createInt8TypedArray = (length, position, value ) => {
     //Create a buffer with the specified length
     const buffer = new ArrayBuffer(length);
 
-    //creates a new Int8Array object that "views" the buffer as an array of 8-bit integers
-    const int8Value = new Int8Array(buffer);
-    
-    int8Value[position] = value;
+    //creates a new DataVew object that "views" the buffer as an array
+    const newView = new DataView(buffer);
+    newView.setInt8(position, value);
 
-    return buffer;
+    // const int8Value = new Int8Array(buffer);
+
+
+    return newView;
 }
 export default createInt8TypedArray;
